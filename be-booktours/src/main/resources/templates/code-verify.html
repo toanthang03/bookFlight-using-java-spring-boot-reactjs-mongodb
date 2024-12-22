@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="font-family: 'Roboto', serif">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center" style="padding: 20px;">
+                <table class="content" width="600" border="0" cellspacing="0" cellpadding="0"
+                    style="border-collapse: collapse; border: 1px solid #cccccc;">
+                    <!-- Header -->
+                    <tr>
+                        <td class="header"
+                            style="background-color: #345C72; padding: 20px; text-align: center; color: white; font-size: 24px;">
+                            Mã xác nhận email
+                        </td>
+                    </tr>
+
+                    <!-- Body -->
+                    <tr>
+                        <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
+                            Xin chào, <span th:text="${email}"></span> <br>
+                            Chúng tôi đã nhận được yêu cầu xác nhận email từ bạn.
+                            <br><br>
+                            <span th:text="${code}" style="color: red;"></span>
+                        </td>
+                    </tr>
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer"
+                            style="background-color: #333333; padding: 20px; text-align: center; color: white; font-size: 14px;">
+                            Copyright &copy; 2024 | GoTrip
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
